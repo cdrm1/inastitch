@@ -1,0 +1,43 @@
+---
+layout: default
+title: Contact Us
+permalink: /contactus/
+description: "Send feedback or questions through our simple form and connect with us on Instagram, X, and Facebook."
+---
+
+
+<div class="container my-5">
+  <h1 class="text-center mb-4">Contact Us</h1>
+
+  <!-- actual contact form -->
+  <form action="mailto:name@domain.com" method="post">
+    <div class="mb-3">
+      <input type="text" name="user-name" class="form-control" placeholder="Your name">
+    </div>
+    <div class="mb-3">
+      <input type="email" name="useremail" class="form-control" placeholder="name@domain.com" required>
+    </div>
+    <div class="mb-3">
+      <textarea name="message" rows="5" class="form-control" placeholder="Enter your message here!"></textarea>
+    </div>
+    <div class="text-center">
+      <input type="submit" name="submit" value="Send Message" class="btn btn-dark">
+    </div>
+  </form>
+</div>
+
+<!-- socials box -->
+<aside class="container text-center my-5">
+  <h2 class="mb-3">We'd love to hear from you!</h2>
+  <div class="d-flex justify-content-center gap-4">
+    <a href="https://www.instagram.com/" target="_blank">
+      <img src="{{ '/assets/pictures/insta_icon.png' | relative_url }}" alt="Instagram logo linking to our page" width="50">
+    </a>
+    <a href="https://x.com/" target="_blank">
+      <img src="{{ '/assets/pictures/x_icon.png' | relative_url }}" alt="X (formerly Twitter) logo linking to our page" width="50">
+    </a>
+    <a href="https://www.facebook.com/" target="_blank">
+      <img src="{{ '/assets/pictures/facebook_icon.png' | relative_url }}" alt="Facebook logo linking to our page" width="50">
+    </a>
+  </div>
+</aside>

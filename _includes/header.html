@@ -1,0 +1,50 @@
+<header>
+  <nav class="d-flex justify-content-between align-items-center flex-wrap px-4 py-2" aria-label="Primary">
+    <!-- web logo + page links :p (stick left) -->
+    <div class="d-flex align-items-center gap-4 flex-wrap">
+      <a href="{{ '/' | relative_url }}"> <!-- icon -->
+        <img src="{{ '/assets/pictures/icon.png' | relative_url }}" alt="Pink crochet bow icon representing site logo" width="50" class="me-3">
+      </a>
+
+      <!-- page links -->
+      <div class="d-flex gap-3 flex-wrap">
+        <a
+          href="{{ '/tools/' | relative_url }}"
+          class="text-white text-decoration-none"
+          {% if page.url == '/tools/' %}aria-current="page"{% endif %}
+        >Tools</a>
+
+        <a
+          href="{{ '/stitches/' | relative_url }}"
+          class="text-white text-decoration-none"
+          {% if page.url == '/stitches/' %}aria-current="page"{% endif %}
+        >Stitches</a>
+
+        <a
+          href="{{ '/patterns/' | relative_url }}"
+          class="text-white text-decoration-none"
+          {% if page.url == '/patterns/' %}aria-current="page"{% endif %}
+        >Patterns</a>
+
+        <a
+          href="{{ '/contactus/' | relative_url }}"
+          class="text-white text-decoration-none"
+          {% if page.url == '/contactus/' %}aria-current="page"{% endif %}
+        >Contact Us</a>
+      </div>
+    </div>
+
+    <!-- font controls! (goes to the right) -->
+    <div class="d-flex align-items-center gap-2 flex-wrap">
+      <button id="increaseFont" class="btn btn-light btn-sm">A+</button>
+      <button id="decreaseFont" class="btn btn-light btn-sm">A-</button>
+
+      <label for="fontSelect" class="text-white mb-0 ms-2 small">Font:</label>
+      <select id="fontSelect" class="form-select form-select-sm w-auto">
+        <option value="sans-serif">Sans</option>
+        <option value="serif">Serif</option>
+        <option value="monospace">Mono</option>
+      </select>
+    </div>
+  </nav>
+</header>
