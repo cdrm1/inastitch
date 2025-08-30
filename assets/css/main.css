@@ -169,3 +169,20 @@ input[type="submit"]:hover {
 		margin: 0 auto 0.9375rem auto; /* 15px */
 	}
 }
+
+
+/* code to fix the padding on the logo!!!  */
+/* logo link = the first <a> inside the left flex group */
+header nav > .d-flex a:first-child {
+  padding: 0 !important;         /* remove the big vertical padding */
+  line-height: 0;                /* kill extra line height */
+  text-decoration: none;         /* keep the logo un-underlined */
+  display: inline-flex;
+  align-items: center;
+}
+header nav > .d-flex a:first-child img {
+  display: block;                /* remove inline baseline gap */
+  height: 50px;                  /* match your width attr for stability */
+  width: 50px;
+  vertical-align: middle;
+}
